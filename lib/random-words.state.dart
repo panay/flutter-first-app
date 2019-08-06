@@ -1,6 +1,6 @@
+import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:startup_namer/random-words.dart';
-import 'package:english_words/english_words.dart';
 
 class RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
@@ -25,7 +25,6 @@ class RandomWordsState extends State<RandomWords> {
           if (index >= _suggestions.length) {
             _suggestions.addAll(generateWordPairs().take(10));
           }
-
 
           return _buildRow(_suggestions[index]);
         });
