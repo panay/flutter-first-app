@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:startup_namer/random-words.dart';
+import 'package:startup_namer/randow-words/random-words.dart';
 
 void main() => runApp(StartupNameGeneratorApp());
 
